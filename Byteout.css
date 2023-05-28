@@ -15,7 +15,7 @@
 #menuToggle {
     display: block;
     position: fixed;
-    top: 50px;
+    top: 7.5%;
     right: 50px;
     z-index: 1;
 }
@@ -171,7 +171,7 @@
 
 .small-header.header-toolbar{
     position: fixed;
-    height: 10vh;
+    height: 14vh;
     transition-duration: 2s;
 }
 .small-header .logo-img img{
@@ -189,7 +189,7 @@
     width: 135px;
     height: 40px;
     border: none;
-    top: 43px;
+    top: 6.5%;
     right: 4%;
     margin-right: 5%;
 
@@ -1049,4 +1049,33 @@ font-weight: 700;
     align-items: center;
     column-gap: 20px;
     width: 100%;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 960px) {
+
+.header-toolbar{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: auto;
+    margin-left: -26%;
+}
+.calc-btn{
+    top: 168px;
+    right: 68px;
+}
+#menuToggle{
+    top: 176px;
+    right: 50px;
+}
+
+.small-header.header-toolbar {
+    position: fixed;
+    height: 9vh;
+    width: 1300px;
+    transition-duration: 2s;
+}
 }

@@ -13,13 +13,17 @@ if (window.scrollY > 0) {
     logo.forEach(function(logo) {
     logo.classList.add('small-logo');
     });
+    links.forEach(function(links){
     links.classList.add('small-link');
+    });
 } else {
     header.classList.remove('small-header');
     header-img-wrapper.forEach(function(logo) {
     logo.classList.remove('small-logo');
     });
+    links.forEach(function(links){
     links.classList.remove('small-link');
+    });
 }
 });
 
@@ -41,3 +45,6 @@ function topFunction() {
 document.body.scrollTop = 0;
 document.documentElement.scrollTop = 0;
 }
+
+
+// Overlay on click //
