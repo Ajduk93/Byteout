@@ -5,20 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Byteout.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <script src="/Byteout.js" defer></script>
     <title>Byteout projekat first page</title>
+
 </head>
 <body>
     <!-- Header Toolbar -->
-<div class="header-toolbar">
-    <div class="header-img-wrapper">
-        <a href="https://deutschezusammenarbeit.rs/"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/1.-nemacka-saradnja-giz.png"></a>
-        <a href="https://www.giz.de/de/html/index.html"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/2.-GIZ-deutsche-geselschaft.png"></a>
-        <img src="/img/МРЕ_GRB_SRPSKI_HORIZONTALNI-manji-2-300x131.png">
-    </div>
+<div class="header-toolbar" id="header-toolbar-js">
+    <div class="header-img-wrapper" id="header-img-wrapper-js">
+        <div class="logo-img"><a href="https://deutschezusammenarbeit.rs/"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/1.-nemacka-saradnja-giz.png"></a></div>
+        <div class="logo-img"><a href="https://www.giz.de/de/html/index.html"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/2.-GIZ-deutsche-geselschaft.png"></a></div>
+        <div class="logo-img"><img src="/img/МРЕ_GRB_SRPSKI_HORIZONTALNI-manji-2-300x131.png"></div>
+</div>
 <div class="header-buttons">
     <a href="https://solarnikalkulator.rs/kalkulator/" ><button class="calc-btn">Kalkulator</button></a>
-</div>
+		<div id="menuToggle">
+			<input type="checkbox" />
+			<span></span>
+			<span></span>
+			<span class="short-span-btn"></span>
+		<ul id="menu">
+            <a href="http://127.0.0.1:5500/Byteout.html#"><li class="top-headline">Početna</li></a>
+            <a class="links" href="https://solarnikalkulator.rs/o-projektu/"><li>O projektu</li></a>
+            <a class="links" href="https://solarnikalkulator.rs/procedure/domacinstva/"><li>Procedure</li></a>
+                <div class="nav-first-wrapper">
+				    <a class="links" href="https://solarnikalkulator.rs/procedure/domacinstva/"><li>Domaćinstva</li></a>
+				    <a class="links" href="https://solarnikalkulator.rs/procedure/stambene-zajednice/"><li>Stambene zajednice</li></a>
+				    <a class="links" href="https://solarnikalkulator.rs/procedure/ostali/"><li>Ostali</li></a>
+                </div>
+            <a class="links" href="https://solarnikalkulator.rs/izvodjac-radova/"><li>Izvođači radova</li></a>
+                <div class="nav-second-wrapper">
+				    <a class="links" href="https://solarnikalkulator.rs/prijava-izvodjaca-radova/"><li>Prijava izvođača radova</li></a>
+                </div>
+			<a class="links" href="https://solarnikalkulator.rs/banke/"><li>Banke</li></a>
+            <a class="links" href="https://solarnikalkulator.rs/o-solarnom-kalkulatoru/"><li>O solarnom kalkulatoru</li></a>
+            <a class="links" href="https://solarnikalkulator.rs/objasnjenje-racuna-kupca-proizvodjaca/"><li>Objašnjenje računa kupca - proizvođača</li></a>
+            <a class="links" href="https://solarnikalkulator.rs/kontakt/"><li>Kontakt</li></a>
+            <a class="links" href="https://solarnikalkulator.rs/kalkulator/"><button class="nav-btn">Pokreni Kalkulator</button></a> 
+			</ul>
+            
+		</div>
+    </div>
+
 </div>
 
 <!-- First row page -->
@@ -26,11 +55,13 @@
 <img class="img-container" src="https://solarnikalkulator.rs/wp-content/uploads/2022/08/Rectangle-15.jpg">
 <div class="container-text-img">
 <div class="text-wrapper">
-<h2 class="text-headline">Solarni Sistemi:</h2>
+<h1 class="text-headline"><strong>Solarni Sistemi:</strong></h1>
 <h2 class="text-second-headline">Sve na jednom mestu</h2>
 <div class="img-wrapper-container"><p>Uz nekoliko lako dostupnih informacija izračunajte kapacitet solarnog sistema za vaše potrebe. Saznajte više o pravnim okvirima za priključenje sistema, mogućim izvođačima radova i opcijama za finsansiranje.</p>
     <a href="https://solarnikalkulator.rs/kalkulator/"><button class="calculator-btn-start">Pokreni Kalkulator</button></a> 
 </div>
+  <div class="menu-container">
+  </div>
 </div>
 <div class="inner-container-img">
     <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/logo-na-naslovnoj-CROPPED-1.png">
@@ -42,20 +73,19 @@
     <div class="inner-calculate">
         <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/07/calculator.svg">
         <h1>Izračunajte</h1>
-<p><b>Na jednostavan način otkrijte koliko bi vas koštala ugradnja solarnih sistema</b>, kao i koliki bi bio pozitivan uticaj korišćenja solarne energije na vaše troškove.</p>
+<p><strong>Na jednostavan način otkrijte koliko bi vas koštala ugradnja solarnih sistema</strong>, kao i koliki bi bio pozitivan uticaj korišćenja solarne energije na vaše troškove.</p>
     </div>
-    <hr>
     <div class="inner-information">
         <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/07/file-lines.svg">
         <h1>Pronađite informacije</h1>
-<p><b>O procesu ugradnje solarnog sistema</b>, izvođačima radova, kao i načinima finansiranja.</p>
+<p><strong>O procesu ugradnje solarnog sistema</strong>, izvođačima radova, kao i načinima finansiranja.</p>
     </div>
 </div>
 <!-- Third row page -->
 <img class="img-container-third" src="/img/o-solarnom-kalkulatoru-FIGMA.png">
 <div class="wrapper-third">
     <div class="heading-third-more-info">
-        <h5>Saznajte više</h5>
+        <h4>Saznajte više</h4>
     </div>
 <div class="heading-third-about-solar-calc">O solarnom kalkulatoru</div>
 <div class="third-para">
@@ -69,9 +99,178 @@
 </div>
 <!-- Fourth row page -->
 <div class="fourth-row-wrapper">
+    <div class="fourth-row-content"><
     <h1>Benefiti ulaganja u solarne sisteme</h1>
-    <div class="fourth-row-content">
+    <div class="fourth-row-paragraph">
     <p>Svet se trenutno bori sa energetskom krizom koja nije prva ove vrste, ali koja je dodatno otežana klimatskom, kao i ekonosmkom krizom u post-COVID okruženju. Investirati u sopstveni sistem za proizvodnju energije osim što omogućava dugoročno nezavisno, stabilno snabdevanje, omogućava i dugoročno smanjenje računa za električnu energiju kao i CO2 emisija. Investiranje u solarne sisteme omogućiće generacijama koje dolaze da žive u energetski decentralizovanom i zdravijem okruženju.</p>
+    </div>
+    </div>
+</div>
+<!-- Fifth grid row -->
+<div class="grid-wrapper">
+<div class="grid-first-row">
+    <div class="card-wrap">
+    <div class="grid-first-card">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/noun-utility-grid-4596742-1.png">
+        <p>Povećanje udela OIE u energetskom miksu Republike Srbije</p>
+    </div>
+    </div>
+        <div class="card-wrap">
+    <div class="grid-second-card">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/2-1.png">
+        <p>Smanjenje troškova za električnu energiju</p>
+        </div>
+    </div>
+        <div class="card-wrap">
+    <div class="grid-third-card">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/noun-green-energy-house-4596682-1.png">
+        <p>Smanjenje emisija gasova sa efektom staklene bašte</p>
+        </div>
+    </div>
+        <div class="card-wrap">
+    <div class="grid-fourth-card">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/4-1.png">
+        <p>Veća nezavisnost od promena cene električne energije</p>
+        </div>
+    </div>
+</div>
+<div class="grid-second-row">
+        <div class="card-wrap">
+    <div class="grid-fifth-card">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/noun-solar-power-2570333-1.png">
+        <p>Sigurnost snabdevanja električnom energijom</p>
+        </div>
+    </div>
+        <div class="card-wrap">
+    <div class="grid-sixth-card">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/noun-battery-charging-4596676-1.png">
+        <p>Mogućnost povezivanja sa elektromobilnošću</p>
+        </div>
+    </div>
+        <div class="card-wrap">
+    <div class="grid-seventh-card">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/elementor/thumbs/noun-solar-energy-converting-4596731-1-pwciznga0xpcg6hrncznwgr0o24nv81vymk97ky38o.png">
+        <p>Mogućnost povezivanja sa sistemom grejanja na električnu energiju</p>
+        </div>
+    </div>
+        <div class="card-wrap">
+    <div class="grid-eighth-card">
+    <p>Više informacija o Solarnom kalkulatoru i benefitima ulaganja u solarne sisteme</p>
+        <a href="https://solarnikalkulator.rs/o-solarnom-kalkulatoru/">O Solarnom Kalkulatoru &#10140;</a>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Sixth row -->
+<div class="sixth-wrapper">
+    <div class="sixth-heading">
+        <h4>Projekat „Promocija obnovljivih izvora energije i energetske efikasnosti u Srbiji“</h4>
+    </div>
+    <div class="sixth-paragraph-img">
+    <div class="sixth-paragraph"><p>Cilj ovog projekta je unapređenje pravnog, institucionalnog i tehničkog okvira za veću upotrebu tehnologija održive energije u Republici Srbiji.
+<br>
+<br>
+Projekat će istražiti mogućnosti za instalaciju solarnih fotonaponskih sistema na krovovima za korišćenje sopstveno proizvedene električne energije u domaćinstvima, stambenim zajednicama, javnim i privatnim zgradama. Zahvaljujući ovome u budućnosti bi trebalo da dođe do pospešivanja korišćenja solarne energije za decentralizovanu proizvodnju.</p>
+<a href="https://solarnikalkulator.rs/o-projektu/"><button class="sixth-btn">Pročitajte više o projektu</button></a>
+</div>
+    <div class="sixth-img"><img src="https://solarnikalkulator.rs/wp-content/uploads/2023/04/logoi-zajedno.png"></div>
+</div>
+</div>
+<!-- Seventh row pictures grid -->
+<div class="seventh-row-wrapper">
+    <div class="seventh-row-card-one">
+        <div class="seventh-row-card">
+        <h3>Procedure</h3>
+        <h2>Domaćinstva</h2>
+        <p>(Fizička lica)</p>
+        <button>Više detalja</button>
+    </div>
+    </div>
+<div class="seventh-row-card-two">
+    <div class="seventh-row-card">
+        <h3>Procedure</h3>
+        <h2>Stambene zajednice</h2>
+        <button>Više detalja</button>
+    </div>
+    </div>
+<div class="seventh-row-card-three">
+    <div class="seventh-row-card">
+        <h3>Procedure</h3>
+        <h2>Ostali</h2>
+        <p>(pravna lica, poslovne zgrade, industrijski objekti, farme, hladnjače, …)</p>
+        <button>Više detalja</button>
+        </div>
+    </div>
+</div>
+<!-- Eighth row -->
+<div class="eight-row-wrapper">
+    <div class="eight-row-wrapper-left">
+        <div class="eight-row-left-text-wrapper">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/07/solar-panel.svg" alt="solarni panel">
+        <h1 class="left-text-headline">Bavite se ugradnjom solarnih panela?</h1>
+        <p class="left-text-paragraph">Prijavite se i dodaćemo vas na listu izvođača radova na našem sajtu. Tako će informacije vaše firme odmah biti vidljive vlasnicima domaćinstava koji razmatraju ili započinju proces prelaska na solarnu energiju.</p>
+        <a href="https://solarnikalkulator.rs/prijava-izvodjaca-radova/"><button>Prijavite se</button></a>
+        </div>
+    </div>
+    <div class="eight-row-wrapper-right">
+        <div class="eight-row-right-text-wrapper">
+        <img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/building-columns.png" alt="kucica">
+        <h1 class="right-text-headline">Vaša banka odobrava kredite za ugradnju solarnih panela?</h1>
+        <p class="right-text-paragraph">Prijavite se i dodaćemo vas na listu banaka na našem sajtu. Tako će informacije vaše banke odmah biti vidljive vlasnicima domaćinstava koji razmatraju ili započinju proces prelaska na solarnu energiju.</p>
+        <a href="https://solarnikalkulator.rs/banke-form/"><button>Prijavite se</button></a>
+        </div>
+    </div>
+</div>
+<!-- Ninth row -->
+<div class="ninth-paragraph">
+    <h3>Prijatelji projekta:</h3>
+    <div class="ninth-img-wrapper">
+    <div class="img-one"><a target="_blank" rel="noopener" href="https://cuzs.org.rs/"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/08/1-zastita-zivotne-sredine.png" alt="unapredjenje zivotne sredine"></div></a>
+    <div class="img-two"><a target="_blank" rel="noopener" href="https://klima101.rs/"><img src="/img/klima101-logo-tiny-cropped.png" alt="klima 101"></div></a>
+    <div class="img-three"><a target="_blank" rel="noopener" href="https://www.byteout.com/"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/byteout.png" alt="byteout"></div></a>
+    <div class="img-four"><a target="_blank" rel="noopener" href="https://moye.design/"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/moye.png" alt="moye design"></div></a>
+    </div>
+</div>
+<!-- Tenth Row -->
+<div class="tenth-row-wrapper">
+    <div class="footer-container">
+    <div class="tenth-column-one">
+        <h3>Procedure:</h3>
+        <ul>
+        <li>Domaćinstva</li>
+        <li>Stambene Zajednice</li>
+        <li>Ostali</li>
+        </ul>
+    </div>
+    <div class="tenth-column-two">
+        <h3>Korisni linkovi:</h3>
+        <ul>
+        <li>Prijava izvođača radova</li>
+        <li>O projektu</li>
+        <li>O Solarnom kalkulatoru</li>
+        <li>Kontakt</li>
+        </ul>
+    </div>
+    <div class="tenth-column-three">
+        <h3>Pratite nas:</h3>
+        <ul>
+        <li ><a href="https://www.instagram.com/solarnikalkulator/?igshid=YmMyMTA2M2Y%3D" class="instagram-hook"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/IG-icon-footer.png" alt="instagram">Instagram</a></li>
+        </ul>
+    </div>
+    <div class="tenth-column-four">
+        <h3>Izračunajte:</h3>
+        <button>Pokreni Kalkulator</button>
+        </div>
+    </div>
+</div>
+<button onclick="topFunction()" id="myBtn" title="Go to top"></i>&#94</i></button>
+<div class="footer-partners-container">
+    <div class="partners-links-container">
+            <div class="parnters-announce">Pokrovitelji projekta
+<h4>Solarni Kalkulator</h4></div>
+        <div class="partners-img"><a href="https://deutschezusammenarbeit.rs/"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/1.-nemacka-saradnja-giz.png" alt="nemacka saradnja"></a></div>
+        <div class="partners-img"><a href="https://www.giz.de/de/html/index.html"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/2.-GIZ-deutsche-geselschaft.png"></a></div>
+        <div class="partners-img"><img src="/img/МРЕ_GRB_SRPSKI_HORIZONTALNI-manji-2-300x131.png"></div>
     </div>
 </div>
 </body>
