@@ -85,8 +85,11 @@
     -webkit-font-smoothing: antialiased;
     transform-origin: 0% 0%;
     transform: translate(100%, 0);
-
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+#menu body::after{
+opacity: 0.5;
 }
 
 #menu li {
@@ -1012,6 +1015,7 @@ cursor: pointer;
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     font-size: 3em;
+    z-index: 0;
 }
 
 #myBtn:hover {
