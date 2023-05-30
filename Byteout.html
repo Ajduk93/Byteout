@@ -11,17 +11,17 @@
 </head>
 <body>
     <!-- Header Toolbar -->
+<div class="overlay" id="overlay"></div>
 <div class="header-toolbar" id="header-toolbar-js">
     <div class="header-img-wrapper" id="header-img-wrapper-js">
         <div class="logo-img"><a href="https://deutschezusammenarbeit.rs/"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/1.-nemacka-saradnja-giz.png"></a></div>
         <div class="logo-img"><a href="https://www.giz.de/de/html/index.html"><img src="https://solarnikalkulator.rs/wp-content/uploads/2022/10/2.-GIZ-deutsche-geselschaft.png"></a></div>
         <div class="logo-img"><img src="/img/МРЕ_GRB_SRPSKI_HORIZONTALNI-manji-2-300x131.png"></div>
-</div>
+    </div>
 <div class="header-buttons">
-    <div class="overlay">
     <a href="https://solarnikalkulator.rs/kalkulator/" ><button class="calc-btn">Kalkulator</button></a>
-		<div id="menuToggle" >
-			<input type="checkbox" class="nav-focus"/>
+		<div id="menuToggle" class="overlayCheckbox" >
+			<input type="checkbox" class="nav-focus" id="targetCheckbox">
 			<span></span>
 			<span></span>
 			<span class="short-span-btn"></span>
@@ -47,8 +47,6 @@
 		</div>
     </div>
 </div>
-</div>
-
 <!-- First row page -->
     <div class="img-wrapper">
 <img class="img-container" src="https://solarnikalkulator.rs/wp-content/uploads/2022/08/Rectangle-15.jpg">

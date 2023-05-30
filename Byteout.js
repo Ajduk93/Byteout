@@ -48,3 +48,15 @@ document.documentElement.scrollTop = 0;
 
 
 // Overlay on click //
+document.addEventListener('DOMContentLoaded', function() {
+const targetCheckbox = document.getElementById('targetCheckbox');
+const overlay = document.getElementById('overlay');
+
+targetCheckbox.addEventListener('change', function() {
+    if (targetCheckbox.checked) {
+    overlay.classList.add('active');
+    } else {
+    overlay.classList.remove('active');
+    }
+});
+});

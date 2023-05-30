@@ -10,6 +10,22 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* Overlay */
+.overlay {
+    position: fixed;
+    top: 2;
+    left: 0;
+    right: 0;
+    width: 3000px;
+    height: 3000px;
+    background-color: rgba(27, 20, 76, 0.347);
+    display: none;
+    z-index: 1;
+}
+
+.overlay.active {
+    display: block;
+}
 
 /* Mobile burger button nav */
 #menuToggle {
@@ -145,9 +161,11 @@ opacity: 0.5;
         border-left: #ced4d9 solid 1px;
 }
 
+
 /* Toolbar */
 
 .header-toolbar{
+    position: relative;
     display: flex;
     background-color: white;
     flex-direction: row;
@@ -155,7 +173,7 @@ opacity: 0.5;
     flex-wrap: wrap;
     width: 100%;
     transition-duration: 2s;
-    z-index: 1;
+    z-index: 3;
 }
 
 .header-buttons{
@@ -288,6 +306,7 @@ padding-left: 15px;
     position: relative;
     width: 100%;
     height: 90vh;
+    margin-top: -1%;
 }
 .img-wrapper-container {
     color: #FFFFFF;
